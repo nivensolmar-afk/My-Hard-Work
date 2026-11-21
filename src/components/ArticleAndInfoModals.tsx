@@ -119,23 +119,26 @@ export function StudioModal({
         <div className="aspect-[16/9] w-full bg-[#EAE5D9] overflow-hidden">
           <ResilientImage
             src={STORY_IMAGE}
-            alt="PAPER & FORM architectural showroom interior"
+            alt="PAPRIVA architectural showroom interior"
             className="w-full h-full object-cover"
           />
         </div>
 
         <div className="p-6 sm:p-10">
-          <p className="text-[11px] uppercase tracking-[0.16em] text-[#41443D]/75">
-            Portland Flagship &amp; Paper Archive
+          <p className="text-[11px] uppercase tracking-[0.16em] text-[#A85438] font-medium">
+            Paper &bull; Creativity &bull; Everyday Essentials
           </p>
           <h2
             id="studio-modal-title"
             className="mt-2 font-serif text-[34px] sm:text-[42px] leading-[1.08] text-[#242729]"
           >
-            About PAPER &amp; FORM
+            About PAPRIVA
           </h2>
+          <p className="mt-2 font-serif italic text-[19px] text-[#41443D]">
+            Where Every Idea Begins.
+          </p>
           <p className="mt-4 text-[15px] sm:text-[16px] leading-[1.7] text-[#41443D]">
-            Founded in 2021 by architects and bookbinders, PAPER &amp; FORM brings together independent paper mills, precision machined writing tools, and small-press design monographs under one quiet roof. Every shelf in our Pearl District showroom is arranged so you can test nib weights, compare 120gsm cotton paper grains, and build a calmer desk ritual.
+            Founded in 2021 by architects and bookbinders, PAPRIVA brings together independent paper mills, precision machined writing tools, and small-press design monographs under one quiet roof. Every shelf in our Pearl District showroom is arranged so you can test nib weights, compare 120gsm cotton paper grains, and build a calmer desk ritual.
           </p>
 
           <div className="mt-8 pt-6 border-t border-[#242729]/12 grid grid-cols-1 sm:grid-cols-2 gap-6 text-[14px]">
@@ -309,7 +312,7 @@ export function InfoModal({
       label: 'Policy',
       title: 'Privacy Policy',
       paragraphs: [
-        'PAPER & FORM respects your quiet inbox and personal data. Email addresses shared for studio dispatches or order receipts are never sold or shared with third-party advertisers.',
+        'PAPRIVA respects your quiet inbox and personal data. Email addresses shared for studio dispatches or order receipts are never sold or shared with third-party advertisers.',
         'Your shopping bag state is stored locally in your browser so items remain saved between visits.',
       ],
     },
@@ -322,10 +325,10 @@ export function InfoModal({
       ],
     },
     contact: {
-      label: 'Studio Desk',
-      title: 'Contact Us',
+      label: 'PAPRIVA Studio Desk',
+      title: 'Contact PAPRIVA',
       paragraphs: [
-        'Write to our studio team anytime at hello@paperandform.com or leave a note below. We respond within one business day.',
+        'Write to our studio team anytime at hello@papriva.com or leave a note below. We respond within one business day.',
       ],
     },
   };

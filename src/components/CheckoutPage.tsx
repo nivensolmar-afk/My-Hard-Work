@@ -69,7 +69,7 @@ export function CheckoutPage({
   };
 
   const createOrderRecord = (channel: 'checkout' | 'whatsapp'): PlacedOrder => ({
-    orderNumber: `PF-${Math.floor(1000 + Math.random() * 9000)}`,
+    orderNumber: `PV-${Math.floor(1000 + Math.random() * 9000)}`,
     date: new Date().toLocaleDateString('en-US', {
       month: 'short',
       day: 'numeric',
@@ -154,7 +154,7 @@ export function CheckoutPage({
             </div>
 
             <p className="mt-6 text-[11px] uppercase tracking-[0.16em] text-[#596A58] font-medium">
-              Order Request #{submittedOrder.orderNumber} Recorded
+              PAPRIVA Order Request #{submittedOrder.orderNumber} Recorded
             </p>
             <h1 className="mt-2 font-serif text-[34px] sm:text-[42px] leading-[1.08] text-[#242729]">
               Thank you, {submittedOrder.customerName}.
@@ -251,7 +251,7 @@ export function CheckoutPage({
             <span>Back to shop</span>
           </button>
           <span className="text-[11px] uppercase tracking-[0.14em] text-[#41443D]/75">
-            Checkout
+            PAPRIVA Checkout
           </span>
         </div>
       </div>

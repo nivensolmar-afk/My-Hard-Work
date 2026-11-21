@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Menu, Search, ShoppingBag, User, X } from 'lucide-react';
 import { CategorySlug } from '../types';
+import { BrandLogo } from './BrandLogo';
 
 interface HeaderProps {
   cartCount: number;
@@ -104,9 +105,10 @@ export function Header({
               e.preventDefault();
               onGoHome();
             }}
-            className="font-serif text-[21px] sm:text-[24px] lg:text-[26px] tracking-[0.08em] uppercase text-[#242729] whitespace-nowrap shrink-0 font-medium focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#242729]"
+            aria-label="PAPRIVA Home"
+            className="inline-flex items-center whitespace-nowrap shrink-0 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#242729]"
           >
-            PAPER &amp; FORM
+            <BrandLogo tone="dark" size="md" />
           </a>
 
           {/* Zone 2: Desktop Navigation Links */}
@@ -191,9 +193,7 @@ export function Header({
           }`}
         >
           <div className="h-16 px-6 flex items-center justify-between border-b border-[#242729]/10">
-            <span className="font-serif text-[20px] tracking-[0.08em] uppercase font-medium">
-              PAPER &amp; FORM
-            </span>
+            <BrandLogo tone="dark" size="sm" />
             <button
               type="button"
               onClick={() => setMobileMenuOpen(false)}

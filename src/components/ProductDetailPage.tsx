@@ -86,7 +86,7 @@ export function ProductDetailPage({
               onClick={onBackToShop}
               className="hover:text-[#242729] transition-colors cursor-pointer shrink-0"
             >
-              Shop
+              PAPRIVA Shop
             </button>
             <span aria-hidden="true">/</span>
             <button
@@ -311,6 +311,10 @@ export function ProductDetailPage({
               <div className="flex justify-between gap-4">
                 <span className="text-[#41443D]/75">Materials</span>
                 <span className="text-[#242729] text-right">{product.materials}</span>
+              </div>
+              <div className="flex justify-between gap-4">
+                <span className="text-[#41443D]/75">Curation</span>
+                <span className="text-[#242729] text-right">PAPRIVA · Where Every Idea Begins.</span>
               </div>
             </div>
 

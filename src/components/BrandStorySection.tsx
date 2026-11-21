@@ -18,7 +18,7 @@ export function BrandStorySection({ onOpenStudioModal }: BrandStorySectionProps)
         <div className="lg:col-span-7 relative min-h-[360px] sm:min-h-[480px] lg:min-h-[640px] bg-[#303538] overflow-hidden">
           <ResilientImage
             src={STORY_IMAGE}
-            alt="Inside the PAPER & FORM retail showroom featuring black steel shelving, solid oak display counter, and organized paper goods"
+            alt="Inside the PAPRIVA retail showroom featuring black steel shelving, solid oak display counter, and organized paper goods"
             className="w-full h-full object-cover lg:absolute lg:inset-0"
           />
         </div>
@@ -28,7 +28,7 @@ export function BrandStorySection({ onOpenStudioModal }: BrandStorySectionProps)
           <Reveal>
             <div>
               <p className="text-[11px] uppercase tracking-[0.18em] text-[#D7AA43] mb-5">
-                Our Space &amp; Philosophy
+                PAPRIVA &middot; Where Every Idea Begins.
               </p>
               <h2 className="font-serif text-[36px] sm:text-[46px] lg:text-[52px] leading-[1.06] font-normal text-[#FAF9F6] [text-wrap:balance]">
                 Good ideas deserve good spaces.

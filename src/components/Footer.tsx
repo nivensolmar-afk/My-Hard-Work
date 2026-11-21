@@ -1,4 +1,5 @@
 import { CategorySlug } from '../types';
+import { BrandLogo } from './BrandLogo';
 
 interface FooterProps {
   onSelectCategory: (category: CategorySlug) => void;
@@ -23,12 +24,16 @@ export function Footer({
                 e.preventDefault();
                 window.scrollTo({ top: 0, behavior: 'smooth' });
               }}
-              className="font-serif text-[26px] tracking-[0.06em] uppercase text-[#FAF9F6] inline-block"
+              aria-label="PAPRIVA Home"
+              className="inline-block"
             >
-              PAPER &amp; FORM
+              <BrandLogo tone="light" size="lg" />
             </a>
-            <p className="mt-4 text-[15px] leading-[1.65] text-[#EAE5D9]/75 max-w-xs">
-              Objects for thinking, making, and everyday creativity.
+            <p className="mt-4 font-serif text-[20px] text-[#FAF9F6]/95 leading-snug">
+              Where Every Idea Begins.
+            </p>
+            <p className="mt-2 text-[13px] tracking-[0.06em] uppercase text-[#D5C7AE]">
+              Paper &bull; Creativity &bull; Everyday Essentials
             </p>
             <div className="mt-6 flex items-center gap-5 text-[13px] tracking-[0.06em] uppercase text-[#D5C7AE]">
               <button
@@ -185,10 +190,10 @@ export function Footer({
             <ul className="space-y-3 text-[14px] text-[#EAE5D9]/85">
               <li>
                 <a
-                  href="mailto:hello@paperandform.com"
+                  href="mailto:hello@papriva.com"
                   className="hover:text-[#FAF9F6] transition-colors"
                 >
-                  hello@paperandform.com
+                  hello@papriva.com
                 </a>
               </li>
               <li>
@@ -212,7 +217,7 @@ export function Footer({
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-[12px] text-[#A69A89]">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-            <span>&copy; 2026 PAPER &amp; FORM. All rights reserved.</span>
+            <span>&copy; 2026 PAPRIVA. All rights reserved.</span>
             <button
               type="button"
               onClick={() => onOpenInfoModal('privacy')}

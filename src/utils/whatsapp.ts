@@ -29,7 +29,11 @@ export function buildWhatsAppOrderMessage(
   const shipping = calculateShipping(subtotal);
   const total = subtotal + shipping;
 
-  const lines: string[] = ['PAPER & FORM — Order Request', ''];
+  const lines: string[] = [
+    'PAPRIVA — Where Every Idea Begins.',
+    'Order Request',
+    '',
+  ];
 
   if (
     customer?.customerName ||

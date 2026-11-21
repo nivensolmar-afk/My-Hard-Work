@@ -19,15 +19,15 @@ export function Hero({ onExploreCollection, onDiscoverStudio }: HeroProps) {
         <div className="lg:col-span-5 px-5 sm:px-8 lg:px-12 py-14 sm:py-18 lg:py-24 flex flex-col justify-between bg-[#F4F1E9] order-2 lg:order-1">
           <div className="max-w-lg">
             <p className="text-[11px] uppercase tracking-[0.18em] text-[#A85438] font-medium mb-5">
-              Architectural Stationery &amp; Studio Goods
+              PAPRIVA &middot; Paper &bull; Creativity &bull; Everyday Essentials
             </p>
             <h1 className="font-serif text-[46px] sm:text-[62px] lg:text-[78px] xl:text-[84px] leading-[0.98] font-normal text-[#242729] tracking-[-0.015em] [text-wrap:balance]">
-              Make room
+              Where Every
               <br />
-              for ideas.
+              Idea Begins.
             </h1>
             <p className="mt-6 sm:mt-7 text-[16px] sm:text-[18px] leading-[1.6] text-[#41443D] max-w-md">
-              Beautifully considered tools for writing, creating, organizing, and bringing your next idea to life.
+              Make room for ideas with beautifully considered tools for writing, creating, organizing, and bringing your next thought to life.
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-3.5">
@@ -75,7 +75,7 @@ export function Hero({ onExploreCollection, onDiscoverStudio }: HeroProps) {
         <div className="lg:col-span-7 relative min-h-[340px] sm:min-h-[460px] lg:min-h-[640px] xl:min-h-[700px] bg-[#EAE5D9] order-1 lg:order-2 overflow-hidden">
           <ResilientImage
             src={HERO_IMAGE}
-            alt="PAPER & FORM architectural stationery showroom with matte charcoal steel shelving, oak display tables, and natural daylight"
+            alt="PAPRIVA architectural stationery showroom with matte charcoal steel shelving, oak display tables, and natural daylight"
             loading="eager"
             className="w-full h-full object-cover object-center lg:absolute lg:inset-0 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:scale-[1.02]"
           />

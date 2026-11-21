@@ -34,8 +34,8 @@ import {
   SortOption,
 } from './types';
 
-const CART_STORAGE_KEY = 'paper_and_form_cart_v1';
-const ORDERS_STORAGE_KEY = 'paper_and_form_orders_v1';
+const CART_STORAGE_KEY = 'papriva_cart_v1';
+const ORDERS_STORAGE_KEY = 'papriva_orders_v1';
 
 type RouteView =
   | { type: 'home' }
