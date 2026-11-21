@@ -6,6 +6,7 @@ interface HeaderProps {
   cartCount: number;
   isScrolled: boolean;
   activeCategory: CategorySlug;
+  onGoHome: () => void;
   onSelectCategory: (category: CategorySlug) => void;
   onNavigateSection: (sectionId: string) => void;
   onOpenCart: () => void;
@@ -17,6 +18,7 @@ export function Header({
   cartCount,
   isScrolled,
   activeCategory,
+  onGoHome,
   onSelectCategory,
   onNavigateSection,
   onOpenCart,
@@ -97,10 +99,10 @@ export function Header({
 
           {/* Zone 1: Brand Wordmark */}
           <a
-            href="#top"
+            href="#/"
             onClick={(e) => {
               e.preventDefault();
-              window.scrollTo({ top: 0, behavior: 'smooth' });
+              onGoHome();
             }}
             className="font-serif text-[21px] sm:text-[24px] lg:text-[26px] tracking-[0.08em] uppercase text-[#242729] whitespace-nowrap shrink-0 font-medium focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#242729]"
           >

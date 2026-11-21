@@ -67,3 +67,16 @@ export interface CartItem {
   variantName: string;
   quantity: number;
 }
+
+export interface PlacedOrder {
+  orderNumber: string;
+  date: string;
+  customerName: string;
+  phone: string;
+  email: string;
+  address: string;
+  notes?: string;
+  channel: 'checkout' | 'whatsapp';
+  total: number;
+  items: { name: string; variant: string; quantity: number; price: number }[];
+}

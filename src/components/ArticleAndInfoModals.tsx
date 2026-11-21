@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Check, MapPin, Package, X } from 'lucide-react';
 import { STORY_IMAGE } from '../data/catalog';
-import { EditorialArticle } from '../types';
-import { PlacedOrder } from './CartDrawer';
+import { EditorialArticle, PlacedOrder } from '../types';
 import { ResilientImage } from './ResilientImage';
 
 /* ── Editorial Article Reader Modal ─────────────────────────────────────── */
@@ -232,12 +231,17 @@ export function AccountModal({
                 className="border border-[#242729]/12 bg-[#F4F1E9] p-4 space-y-2 text-[13px]"
               >
                 <div className="flex justify-between font-medium text-[#242729]">
-                  <span>Order #{order.orderNumber}</span>
+                  <span>
+                    Request #{order.orderNumber} ·{' '}
+                    {order.channel === 'whatsapp' ? 'WhatsApp' : 'Web'}
+                  </span>
                   <span className="tabular-nums">${order.total.toFixed(2)}</span>
                 </div>
-                <p className="text-[#41443D]/80">
-                  {order.date} · {order.address}
+                <p className="text-[#41443D]/85">
+                  {order.date} · {order.customerName}
+                  {order.phone ? ` · ${order.phone}` : ''}
                 </p>
+                <p className="text-[#41443D]/80">{order.address}</p>
                 <div className="pt-2 border-t border-[#242729]/10 space-y-1 text-[#41443D]">
                   {order.items.map((item, idx) => (
                     <p key={idx}>

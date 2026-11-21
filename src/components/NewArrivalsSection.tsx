@@ -51,16 +51,12 @@ export function NewArrivalsSection({
         <div className="mt-10 lg:mt-12 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10 sm:gap-x-6 lg:gap-x-7">
           {newArrivals.map((product, index) => (
             <Reveal key={product.id} delayMs={index * 60}>
-              <div className="flex flex-col h-full">
-                <ProductCard
-                  product={product}
-                  onAddToCart={onAddToCart}
-                  onOpenProduct={onOpenProduct}
-                />
-                <p className="mt-2.5 text-[13px] leading-relaxed text-[#41443D]/85 line-clamp-2">
-                  {product.shortDescription}
-                </p>
-              </div>
+              <ProductCard
+                product={product}
+                description={product.shortDescription}
+                onAddToCart={onAddToCart}
+                onOpenProduct={onOpenProduct}
+              />
             </Reveal>
           ))}
         </div>
