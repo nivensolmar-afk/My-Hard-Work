@@ -1,0 +1,6 @@
+{
+  "name": "PAPER & FORM",
+  "description": "Thoughtful tools for everyday creativity — architectural stationery, archival paper goods, fine writing instruments, and studio monographs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
